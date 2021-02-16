@@ -1,7 +1,15 @@
 # Guide
 The blueprint repository for the Kovan Github. This repository is made to agree on GitHub usage, project development and code documentation. It consists of documentation files such as Doxygen html and guide Python codes for Doxygen and Sphinx documentation. Codes have example comments to explain comment tags and comment styles. The repository has a Wiki page which includes more comprehensive discussions on conventions. In fact, README.md of the repository only explains how to arrange the Readme file for a Kovan project repository. For further information on other concepts, one should examine guide codes, issues and wiki page. 
 
-Add badges which makes tracking easier. Check [shields.io](https://shields.io/).
+#### Markdown
+Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents (taken from [Markdown](https://www.markdownguide.org/getting-started)). Github uses Markdown for documentation files. Please visit their [cheat sheet](https://www.markdownguide.org/cheat-sheet/) to see syntax.
+
+#### Bagdes
+Add badges which makes tracking easier. Private repositories can not use the badges. Below is given as a generic example but has no functionality. For instance, badges can show total lines in the project or build . 
+Check [shields.io](https://shields.io/).  
+[![Generic badge](https://img.shields.io/badge/<Burak>-<Badge>-<COLOR>.svg)](https://shields.io/)  
+
+
 **Note:** Sections below are not compulsory. Some of them are special to some cases and put here to have a look up. If you do not need a section (eg. [status](#status)), exclude it from the readme.
 
 Readme file composed of:
@@ -27,13 +35,14 @@ It should be as short as possible. In some articles, the length of introduction 
 Shortly describe the project's features and ToDo.
 
 * Describe the project outline
-* Define comment style
+* Define comment style  
+* ~~Removed dummy feature~~
 
 **ToDo:**
-* Add a wiki page
-* Add badges
-* Add command line command as an example
-* Add code segments as examples
+- [ ] Add a wiki page
+- [X] Add badges
+- [X] Add command line command as an example
+- [X] Add code segments as examples
 
 # Prerequisites
 
@@ -77,7 +86,21 @@ roslaunch ur5_gripper_moveit_config ur5_gripper_moveit_planning_execution.launch
 # on the third one launch rviz:
 source ~/ros_workspace/catkin_ws/devel/setup.bash
 roslaunch ur5_gripper_moveit_config moveit_rviz.launch config:=true
-```
+```  
+
+Special code blocks can be used to explain sophisticated parts of the project.
+
+**Examples:**
+````Python
+def PyMethod():
+  pass
+````
+````C++
+void CppMethod(int &param1){
+  param1++;
+  return;
+}
+````
 # Author(s)
 
 Burak Bolat: burakbolatcs@gmail.com

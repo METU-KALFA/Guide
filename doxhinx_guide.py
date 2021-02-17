@@ -1,9 +1,30 @@
-"""Guide for Sphinx documentation
+"""Guide for Sphinx and Doxygen integrated documentation
 
-The Sphinx guide and Sphinx commenting exapmle
+This guide code has comment style like Sphinx but uses tags from Java comment conventions
 
-Attributes:
-    anyInt (int): global integer attribute for this Python file.
+Author:
+    Burak Bolat
+
+Version:
+    0
+
+Args (function) / Attributes (class or global):
+    ParameterName   parameter description.
+    If a second line is needed care the indentation.
+
+Return:
+    Result of the method. 
+
+Raises:
+    Exception that can occur.
+    Throws / Exception can be used as synonym.
+
+See:
+    emphasize important points.
+    eg. give a URL
+    eg. #func(), MyClass#ClassMethod(anyInt)
+
+@depreceted
 
 Todo:
     * Add Todo if necessary.
@@ -27,8 +48,8 @@ def func(param1):
         The return value.
 
     Yields:
-        int:    The next number in the range of 0 to `n` - 1.
-                Yields is used for generator instead of Returns
+        int: The next number in the range of 0 to `n` - 1.
+            Yields is used for generator instead of Returns
 
     Examples:
         >>> print(func(5))

@@ -20,6 +20,8 @@ Here are the some Java comment tags in suggested Java order:
 
 """
 
+anyInt = 123456
+
 def func():
     """Documentation for a function.
 
